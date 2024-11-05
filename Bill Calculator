@@ -1,0 +1,7 @@
+bill_total = float(input("How much was dinner, in total?: "))
+tip_percentage = float(input("What percentage do you want to tip?: "))
+number_of_people = int(input("How many people came out?: "))
+tip_amount = bill_total * (tip_percentage / 100)
+total_bill_with_tip = bill_total + tip_amount
+per_person_cost = total_bill_with_tip / number_of_people
+print("Each person owes:", per_person_cost)
